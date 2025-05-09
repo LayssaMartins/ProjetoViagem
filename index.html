@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência Paraibana de Turismo</title>
+  <link rel="stylesheet" href="home.css" />
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+</style>
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <header>
+    <nav>
+      <h1>Agência Paraibana de Turismo</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2>Conheça nossos destinos e viagens!</h2>
+  </section>
+ 
+  <!-- Destaques de pacotes -->
+  <section class="pacotes">
+    <h3>Pacotes em destaque:</h3>
+
+    <!-- Linha com carrosseis lado a lado -->
+    <div class="linha-carrosseis">
+
+      <!-- Carrossel 1 -->
+      <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <div class="carousel" data-index="0">
+          <img src="img/depositphotos_314596550-stock-photo-canoa-quebrada-brazil-december-2018.jpg" alt="Imagem 1">
+          <img src="img/Vista_aerea_praia_de_canoa_quebrada_-_aracati_-_ceara.jpg" alt="Imagem 2">
+          <img src="img/il-nuraghe-hotel-residenza.jpg" alt="Imagem 3">
+        </div>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        <h4>Canoa Quebrada-CE</h4>
+        <a href="#">Saiba mais sobre a viagem</a>
+      </div>
+
+      <!-- Carrossel 2 -->
+      <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <div class="carousel" data-index="0">
+          <img src="img/img 1.jpg" alt="Imagem 4">
+          <img src="img/img 2.jpg" alt="Imagem 5">
+          <img src="img/img3.jpg" alt="Imagem 6">
+        </div>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        <h4>Pontal do Maragogi-AL</h4>
+        <a href="#">Saiba mais sobre a viagem</a>
+      </div>
+
+      <!-- Carrossel 3 -->
+      <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <div class="carousel" data-index="0">
+          <img src="img/Bonito-Pernambuco 1.jpg" alt="Imagem 7">
+          <img src="img/bonito2.jpg" alt="Imagem 8">
+          <img src="img/bonito3.jpg" alt="Imagem 9">
+          <img src="img/bonito4.jpg" alt="Imagem 10">
+        </div>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        <h4>Bonito-Pernambuco</h4>
+        <a href="#">Saiba mais sobre a viagem</a>
+      </div>
+    </div>
+  </section>
+  <script src="home.js"></script>
+<footer>
+    <p class="paragrafo-footer">&copy; 2025 Agência Paraibana de Turismo. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
