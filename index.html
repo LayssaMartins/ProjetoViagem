@@ -17,7 +17,7 @@
       <h1>Agência Paraibana de Turismo</h1>
       <ul>
         <li><a href="index.html">Início</a></li>
-        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="#pacotes-destaque">Pacotes</a></li>
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="login.html">Login</a></li>
       </ul>
@@ -27,10 +27,11 @@
   <!-- Banner -->
   <section class="banner">
     <h2>Conheça nossos destinos e viagens!</h2>
+    <p class="texto-banner">Aproveite os melhores pacotes do Nordeste com conforto e economia.<br></p>
   </section>
  
   <!-- Destaques de pacotes -->
-  <section class="pacotes">
+ <section class="pacotes" id="pacotes-destaque">
     <h3>Pacotes em destaque:</h3>
 
     <!-- Linha com carrosseis lado a lado -->
@@ -40,42 +41,68 @@
       <div class="carousel-container">
         <button class="prev" onclick="moveSlide(this, -1)">❮</button>
         <div class="carousel" data-index="0">
-          <img src="img/depositphotos_314596550-stock-photo-canoa-quebrada-brazil-december-2018.jpg" alt="Imagem 1">
-          <img src="img/Vista_aerea_praia_de_canoa_quebrada_-_aracati_-_ceara.jpg" alt="Imagem 2">
-          <img src="img/il-nuraghe-hotel-residenza.jpg" alt="Imagem 3">
+          <img src="img/garanhuns1.jpeg" alt="Imagem 1">
+          <img src="img/garanhuns2.jpeg" alt="Imagem 2">
         </div>
         <button class="next" onclick="moveSlide(this, 1)">❯</button>
-        <h4>Canoa Quebrada-CE</h4>
-        <a href="#">Saiba mais sobre a viagem</a>
+        <h4>Garanhuns-PE</h4><br>
+        <a href="garanhuns.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
       </div>
 
       <!-- Carrossel 2 -->
       <div class="carousel-container">
         <button class="prev" onclick="moveSlide(this, -1)">❮</button>
         <div class="carousel" data-index="0">
-          <img src="img/img 1.jpg" alt="Imagem 4">
-          <img src="img/img 2.jpg" alt="Imagem 5">
-          <img src="img/img3.jpg" alt="Imagem 6">
+          <img src="img/piranhas1.jpeg" alt="Imagem 4">
+          <img src="img/piranhas2.jpeg" alt="Imagem 5">
         </div>
         <button class="next" onclick="moveSlide(this, 1)">❯</button>
-        <h4>Pontal do Maragogi-AL</h4>
-        <a href="#">Saiba mais sobre a viagem</a>
+        <h4>Piranhas-AL</h4><br>
+        <a href="piranhas.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
       </div>
 
       <!-- Carrossel 3 -->
       <div class="carousel-container">
         <button class="prev" onclick="moveSlide(this, -1)">❮</button>
         <div class="carousel" data-index="0">
-          <img src="img/Bonito-Pernambuco 1.jpg" alt="Imagem 7">
-          <img src="img/bonito2.jpg" alt="Imagem 8">
-          <img src="img/bonito3.jpg" alt="Imagem 9">
-          <img src="img/bonito4.jpg" alt="Imagem 10">
+          <img src="img/hotelfazenda1.jpeg" alt="Imagem 7">
+          <img src="img/hotalfazenda2.jpeg" alt="Imagem 8">
         </div>
         <button class="next" onclick="moveSlide(this, 1)">❯</button>
-        <h4>Bonito-Pernambuco</h4>
-        <a href="#">Saiba mais sobre a viagem</a>
+        <h4>Viver Hotel Fazenda - Moreno/PE</h4><br>
+        <a href="hotelfazenda.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
       </div>
     </div>
+
+  <div class="linha-carrosseis">
+  <!-- Segunda linha com mais carrosséis -->
+  <!-- Carrossel 4 -->
+  <div class="carousel-container">
+    <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+    <div class="carousel" data-index="0">
+      <img src="img/tamandare1.jpeg" alt="Imagem 9">
+      <img src="img/tamandare2.jpeg" alt="Imagem 10">
+    </div>
+    <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    <h4>Tamandaré-PE</h4><br>
+    <a href="tamandare.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
+  </div>
+
+  <!-- Carrossel 5 -->
+  <div class="carousel-container">
+    <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+    <div class="carousel" data-index="0">
+      <img src="img/bonito1.jpeg" alt="Imagem 11">
+      <img src="img/bonito2.jpeg" alt="Imagem 12">
+    </div>
+    <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    <h4>Excursão Bonito e Gravatá - PE</h4><br>
+    <a href="bonito.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
+  </div>
+
+</div>
+  
+
   </section>
   <script src="home.js"></script>
 <footer>

@@ -24,3 +24,19 @@ function moveSlide(button, direction) {
     carousel.setAttribute('data-index', currentIndex);
   }
   
+
+/*Animação Header/banner*/
+  const header = document.querySelector('header');
+
+let angle = 0;
+function animateGradient() {
+  angle += 1; // velocidade do movimento
+  if (angle > 360) angle = 0;
+  
+  // Exemplo de degrade girando no ângulo
+  header.style.background = `linear-gradient(${angle}deg, #004aad, #0055cc, #003080, #004aad)`;
+  
+  requestAnimationFrame(animateGradient);
+}
+animateGradient();
+
