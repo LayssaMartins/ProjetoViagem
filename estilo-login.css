@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0e5c4b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #225185;
+}
+
+.toggle-link {
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #0e5c45;
+  text-decoration: underline;
+  display: block;
+}
+
+/* Esconde o checkbox */
+#toggle-form {
+  display: none;
+}
+
+/* Login visível por padrão */
+.form-login {
+  display: block;
+}
+
+.form-register {
+  display: none;
+}
+
+/* Quando o checkbox está marcado, mostra o registro e esconde o login */
+#toggle-form:checked ~ .container .form-login {
+  display: none;
+}
+
+#toggle-form:checked ~ .container .form-register {
+  display: block;
+}
