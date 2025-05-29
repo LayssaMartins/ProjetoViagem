@@ -1,0 +1,89 @@
+.pacotes > h1 {
+  font-size: 32px;
+  background-color: #f1daa9;
+  color: #0a0202;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center; /* corrigido: display:center não existe, use text-align */
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;  /* largura máxima do container */
+  margin: 30px auto; /* centraliza horizontal e dá espaço acima */
+  padding: 0 10px;
+  flex-wrap: nowrap; /* evita quebrar linha */
+}
+
+.carousel-container img {
+  width: 48%;      /* cada imagem ocupa cerca de metade do container */
+  height: auto;    /* mantém a proporção da imagem */
+  object-fit: cover; /* cobre o espaço, mas pode cortar bordas mínimas */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/*sobre as informações*/
+
+.info-viagem {
+  max-width: 700px;
+  margin: 20px auto 40px auto;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #fff8e1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-viagem table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-viagem th,
+.info-viagem td {
+  border: 1px solid #f7c04b;
+  padding: 12px 15px;
+  vertical-align: top;
+}
+
+.info-viagem th {
+  background-color: #f7c04b;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.info-viagem tr:nth-child(even) {
+  background-color: #fff0d6;
+}
+
+.info-viagem tr:hover {
+  background-color: #fce6c9;
+}
+
+.botao-pagamento-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.botao-pagamento {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #f7c04b;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.botao-pagamento:hover {
+  background-color: #d4a12d;
+}

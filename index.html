@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência Paraibana de Turismo</title>
+  <link rel="stylesheet" href="home.css"/>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+</style>
+</head>
+<body>
+  <!-- Menu de navegação -->
+  <header>
+<nav>
+  <h1>
+    <img src="img/fotologo.jpeg" alt="Logo da Agência Paraibana"  style="max-width: 220px; height: auto">
+  </h1>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<ul class="menu" id="menu">
+  <li><a href="index.html">Início</a></li>
+  <li><a href="#pacotes-destaque">Pacotes</a></li>
+  <li><a href="sobre.html">Sobre</a></li>
+  <li><a href="login.html">Login</a></li>
+</ul>
+</nav>
+
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2>Conheça nossos destinos e viagens!</h2>
+    <p class="texto-banner">Aproveite os melhores pacotes do Nordeste com conforto e economia.<br></p>
+  </section>
+ 
+  <!-- Destaques de pacotes -->
+ <section class="pacotes" id="pacotes-destaque">
+    <h3>Pacotes em destaque:</h3>
+
+    <!-- Linha com carrosseis lado a lado -->
+    <div class="linha-carrosseis">
+
+      <!-- Carrossel 1 -->
+      <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <div class="carousel" data-index="0">
+          <img src="img/garanhuns1.jpeg" alt="Imagem 1">
+          <img src="img/garanhuns2.jpeg" alt="Imagem 2">
+        </div>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        <h4>Garanhuns-PE</h4><br>
+        <a href="garanhuns.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
+      </div>
+
+      <!-- Carrossel 2 -->
+      <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <div class="carousel" data-index="0">
+          <img src="img/piranhas1.jpeg" alt="Imagem 4">
+          <img src="img/piranhas2.jpeg" alt="Imagem 5">
+        </div>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        <h4>Piranhas-AL</h4><br>
+        <a href="piranhas.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
+      </div>
+
+      <!-- Carrossel 3 -->
+      <div class="carousel-container">
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <div class="carousel" data-index="0">
+          <img src="img/hotelfazenda1.jpeg" alt="Imagem 7">
+          <img src="img/hotalfazenda2.jpeg" alt="Imagem 8">
+        </div>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        <h4>Viver Hotel Fazenda - Moreno/PE</h4><br>
+        <a href="hotelfazenda.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
+      </div>
+    </div>
+
+  <div class="linha-carrosseis">
+  <!-- Segunda linha com mais carrosséis -->
+  <!-- Carrossel 4 -->
+  <div class="carousel-container">
+    <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+    <div class="carousel" data-index="0">
+      <img src="img/tamandare1.jpeg" alt="Imagem 9">
+      <img src="img/tamandare2.jpeg" alt="Imagem 10">
+    </div>
+    <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    <h4>Tamandaré-PE</h4><br>
+    <a href="tamandare.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
+  </div>
+
+  <!-- Carrossel 5 -->
+  <div class="carousel-container">
+    <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+    <div class="carousel" data-index="0">
+      <img src="img/bonito1.jpeg" alt="Imagem 11">
+      <img src="img/bonito2.jpeg" alt="Imagem 12">
+    </div>
+    <button class="next" onclick="moveSlide(this, 1)">❯</button>
+    <h4>Excursão Bonito e Gravatá - PE</h4><br>
+    <a href="bonito.html" class="botao-saiba-mais">Saiba mais sobre a viagem</a>
+  </div>
+</div>
+  </section>
+  <script src="home.js"></script>
+<footer>
+    <p class="paragrafo-footer">&copy; 2025 Agência Paraibana de Turismo. Todos os direitos reservados.</p>
+</footer>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+  }
+</script>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+  }
+
+  // Fecha o menu ao clicar fora
+  window.addEventListener("click", function (event) {
+    const menu = document.getElementById("menu");
+    const toggle = document.querySelector(".menu-toggle");
+    if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+      menu.classList.remove("show");
+    }
+  });
+</script>
+</body>
+</html>

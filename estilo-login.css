@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a6c8f5; /* azul suave, combinando com o restante do site */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+ 
+}
+
+.container {
+  background: #fffdf8; /* branco/bege bem claro */
+  padding: 40px; /* aumentei o espaçamento interno */
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  width: 420px; /* aumentei a largura da caixa */
+}
+
+h2 {
+  text-align: center;
+  color: #004aad; /* azul principal */
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #004aad; /* azul para consistência */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff9100; /* laranja vibrante */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e27d00; /* laranja um pouco mais escura no hover */
+}
+
+.toggle-link {
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #004aad; /* azul principal */
+  text-decoration: underline;
+  display: block;
+}
+
+/* Esconde o checkbox */
+#toggle-form {
+  display: none;
+}
+
+/* Login visível por padrão */
+.form-login {
+  display: block;
+}
+
+.form-register {
+  display: none;
+}
+
+/* Alterna visibilidade dos formulários */
+#toggle-form:checked ~ .container .form-login {
+  display: none;
+}
+
+#toggle-form:checked ~ .container .form-register {
+  display: block;
+}
+
